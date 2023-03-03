@@ -11,6 +11,7 @@
   --light-color: #fff;
   --dark-color: #000;
   --grayscale: #cecece;
+  --success: #22bb33;
 
   --extra-small-size: 4px;
   --small-size: 8px;
@@ -36,32 +37,62 @@
   color: var(--light-color);
 }
 
-.header__links{
+.header__links {
   text-decoration: none;
   color: var(--light-color);
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.header__links:hover{
+.header__links:hover {
   text-decoration: none;
   color: var(--quinary-color);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .header__verified {
   font-size: calc(var(--medium-size) + 5px);
-  margin-bottom: var(--large-size);
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.header__verified:hover{
+.header__verified:hover {
   color: var(--quinary-color);
   font-size: calc(var(--large-size) - 5px);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .skills__left-column {
   background: var(--grayscale);
+}
+
+.metas__right-column {
+  background: var(--tertiary-color);
+}
+
+.metas__title {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.metas__label{
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  transition: all 0.5s;
+}
+
+.finish:hover {
+  background: var(--quaternary-color);
+  border-radius: 4px;
+  transition: all 0.5s;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.checked:hover {
+  background: var(--success);
+  border-radius: 4px;
+  transition: all 0.5s;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .skills__title {
@@ -73,13 +104,13 @@
 .skills__label {
   color: var(--secondary-color);
   font-size: 0.8rem;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.skills__label:hover{
+.skills__label:hover {
   background: var(--quinary-color);
   border-radius: 4px;
-  transition: all .5s;
+  transition: all 0.5s;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -92,7 +123,4 @@
   margin: 0;
   margin-bottom: var(--medium-size);
   /* opacity: .5; */
-}
-
-.skills__right-column {
 }
